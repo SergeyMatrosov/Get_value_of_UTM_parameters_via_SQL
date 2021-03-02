@@ -7,7 +7,7 @@ SELECT
 REGEXP_EXTRACT(referrer, r"utm_source=([^&]*)") AS source,
 REGEXP_EXTRACT(referrer, r"utm_medium=([^&]*)") AS medium,
 REGEXP_EXTRACT(referrer, r"utm_campaign=([^&]*)") AS campaign
---FOR postgresql USE SUBSTRING(referrer from 'utm_PARAMETER_NAME=([^&]*)')
+--FOR postgresql use SUBSTRING(referrer from 'utm_PARAMETER_NAME=([^&]*)') AS smth
 FROM 
 UTM_Parameters
 ```
